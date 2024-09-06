@@ -49,18 +49,15 @@
 ## Problem 1 ##
 #Please write a script that: 
 # - Asks for the user's name and then prints it twice, on two consecutive lines.
-
-
-
-
-
-## Problem 2 ##
-#Please write a script that: 
+name = input("What is your name?")
+print(name)
+print(name)
 # - Asks for the user's name
 # - Prints it out twice on a single line so that there is an exclamation mark at the beginning of the line, 
 # - another between the two names and a third one at the end of the line.
 
-
+name = input("What is your name?")
+print("!" + name + "!" + name + "!")
 ## Problem 3 ##
 #Please write a script that: 
 # - Asks for the user's name and address. 
@@ -71,11 +68,32 @@
 #   - Street address: 91 Station Road
 #   - City and postal code: Folsom CA, 95630
 
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+street_address = input("Enter your street address: ")
+city_and_postal_code = input("Enter your city and postal code: ")
+
+print("\nFirst name: " + first_name)
+print("Last name: " + last_name)
+print("Street address: " + street_address)
+print("City and postal code: " + city_and_postal_code )
+print()
+print()
+
+
 ## Problem 4 ##
 #Please write a script that: 
 # - Asks for 3 words 
 # - Puts the words together with dashes and prints that out
 
+
+first_word = input("Enter the first word: ")
+second_word = input("Enter the second word: ")
+third_word = input("Enter the third word: ")
+
+
+result = first_word + '-' + second_word + '-' + third_word
+print("Concatenated result:", result)
 
 ## Problem 5 ##
 #Please write a script that: 
@@ -88,3 +106,12 @@
 #Mary is a valiant knight, born in the year 1572. 
 #One morning Mary woke up to an awful racket: a dragon was approaching the village. 
 #Only Mary could save the village's residents.
+
+# Collect user inputs
+name = input("Please type in a name: ")
+year = input("Please type in a year: ")
+
+# Print the short story using the provided information
+print("\n")
+print(name + " is a valiant knight, born in the year " + year + "." " One morning " + name + " woke up to an awful racket a dragon was approaching the village."
+" Only " + name + " could save the village's residents." )
